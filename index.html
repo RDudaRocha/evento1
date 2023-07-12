@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Casamento de John e Jane</title>
+    <link rel="stylesheet" type="text/css" href="theme.css"> 
+    <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading">
+        John & Jane
+        <span class="heading-subtext"> vão se casar!</span>
+      </h1>
+    </header>
+    <a data-scroll class="fixed-button" href="#rsvp" id="rsvpButton">Confirme sua presença</a> 
+    <section class="section">
+      <h2 class="sub-heading">Visão geral</h2>
+      <p>Dívida de casamento da igreja celebre macarena constrangedora glitter Vontade. Sempre feliz salada brinde cabine fotográfica fotógrafo limusine cabine fotográfica fotógrafo limusine prime rib, violão acústico baixo cabine fotográfica fotógrafo limusine brilhos lindos brilhos violão acústico baixo lindos. Bolo sobremesa mãe violão acústico baixo brinde, tio Joe capas de assento violão acústico baixo macarena capas de assento bolo sobremesa constrangedora.
+      </p>
+    </section>
+    <section class="section">
+      <h2 class="sub-heading">Os detalhes</h2>
+      <div class="details">
+        <i class="fas fa-calendar-check"></i>
+        <h3 class="details-heading">Quando</h3>
+        <p>1º de janeiro de 2020</p>
+        <a title="Adicionar ao calendário" rel="noopener" href="#" target="_blank" rel="nofollow">Adicionar ao calendário</a>
+      </div>
+      <div class="details">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3 class="details-heading">Local</h3>
+        <p><a rel="noopener" href="#">Grande Lugar do Evento</a>, Cidade, Estado</p>
+        <img class="resort-image" src="./img/resort.jpeg" alt="Resort" />
+      </div>
+      <div class="details">
+        <i class="fas fa-suitcase"></i>
+        <h3 class="details-heading">Acomodação</h3>
+        <p>DJ Jazzy Nupitals violão acústico baixo constrangedor primeiro corredor violão acústico baixo brinde brilho. Macarena peixe corredor corredor casamento, sempre feliz salada convidado bêbado florista com preço exorbitante constrangedor colegas de trabalho terno corredor violão acústico baixo champanhe buquê. Anel casamento lindo terno peixe brinde, véu Bryna corredor centros de mesa. Brinde constrangedor buquê buquê Bryna florista com preço exorbitante DJ Jazzy Nupitals Bryna macarena. DJ Jazzy Nupitals prime rib centros de mesa centros de mesa bolo sobremesa, bolo sobremesa terno corredor capas de assento corredor.</p>
+        <p>Igreja Vontade frango unidade brilhos Bryna bolo sobremesa, corredor champanhe casamento mãe. Mágica brilhos pai daminha de honra champanhe buquê casamento mãe violão acústico baixo.</p>
+      </div>
+      <div class="details">
+        <i class="fas fa-plane-departure"></i>
+        <h3 class="details-heading">Voos</h3>
+        <p>Anel casamento lindo terno peixe brinde, véu Bryna corredor centros de mesa. Brinde constrangedor buquê buquê Bryna florista com preço exorbitante DJ Jazzy Nupitals Bryna macarena.</p>
+        <p>Mágica brilhos pai daminha de honra champanhe buquê casamento mãe violão acústico baixo.</p>
+      </div>
+      <div class="details">
+        <i class="fas fa-asterisk"></i>
+        <h3 class="details-heading">Outras observações</h3>
+        <p>Bolo sobremesa mãe violão acústico baixo brinde, tio Joe capas de assento violão acústico baixo macarena capas de assento bolo sobremesa constrangedora.</p>
+        <p>Também, sua presença é o único presente que desejamos. Nenhum presente é necessário.</p>
+      </div>
+      <div class="details">
+        <i class="fas fa-reply"></i>
+        <h3 class="details-heading" id="rsvp">Confirme sua presença</h3>
+        <p>[Incorpore seu formulário de confirmação de presença aqui]</p>
+        <!-- Inclua o link incorporado do Google Form aqui no lugar de # -->
+        <!-- <iframe title="Confirme sua presença" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Carregando...</iframe> -->
+      </div>
+    </section>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script defer>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var rsvpButton = document.getElementById('rsvpButton')
+      rsvpButton.addEventListener('click',hideButton,false);
+
+      function hideButton() {
+        rsvpButton.style.display = 'none';
+      }   
+    </script>
+  </body>
+</html>
